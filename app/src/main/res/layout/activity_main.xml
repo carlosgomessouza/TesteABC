@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/titulo1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Amazon"
+        android:textColor="#ECA2DF"
+        android:paddingLeft="15dp"
+        android:textSize="50sp"
+        ></TextView>
+
+    <TextView
+        android:layout_toRightOf="@+id/titulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textAllCaps="true"
+        android:textColor="#B9B6B6"
+        android:textSize="50sp"
+        android:paddingVertical="5dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/txtfilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filmes:"
+        android:textColor="#B9B6B6"
+        android:layout_below="@+id/titulo1"
+        android:layout_marginTop="120dp"
+        ></TextView>
+
+    <ListView
+        android:layout_below="@+id/txtfilme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+
+</RelativeLayout>

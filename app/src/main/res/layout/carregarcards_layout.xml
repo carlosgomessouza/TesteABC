@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        app:cardBackgroundColor="@color/backGround"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/imgfilme"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/testetwo"
+                android:paddingBottom="10dp"
+
+                ></ImageView>
+
+            <TextView
+
+                android:id="@+id/txtnomeDoFilme"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgfilme"
+                android:text="Peaky Blinders"
+                android:textColor="#797678"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:layout_below="@+id/txtsinopseINU"
+                android:layout_marginLeft="5dp"
+                android:textColor="#99F7EBF5"
+                android:text="@string/sinopse"
+                android:id="@+id/txtsinopse"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_toRightOf="@+id/imgfilme"></TextView>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnomeDoFilme"
+                android:layout_marginTop="5dp"
+                android:numStars="4"
+                android:rating="4.0"
+                android:stepSize="1.0"></RatingBar>
+
+            <TextView
+                android:id="@+id/txtGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar"
+                android:layout_marginTop="5dp"
+                android:text="Gênero:"
+                android:textColor="#B9B6B6"
+
+                ></TextView>
+
+            <TextView
+                android:id="@+id/inpGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtGenero"
+                android:text="Ação"
+                android:textColor="#B9B6B6"
+                ></TextView>
+
+            <TextView
+
+                android:id="@+id/txtdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGenero"
+                android:layout_marginTop="5dp"
+                android:text="Lançamento:"
+                android:textColor="#B9B6B6"
+
+                ></TextView>
+
+            <TextView
+                android:id="@+id/inpData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inpGenero"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtdata"
+                android:text="12/09/2013"
+                android:textColor="#B9B6B6"></TextView>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="Sinopse:"
+                android:textColor="#B9B6B6"
+                android:id="@+id/txtsinopseINU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgfilme"
+                ></TextView>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:padding="20dp"
+    tools:context=".Add_Activity">
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="15dp"
+        android:text="Amazon"
+        android:textColor="#ECA2DF"
+        android:textSize="50sp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/titulo1"
+        android:paddingVertical="5dp"
+        android:text="ABC"
+        android:textAllCaps="true"
+        android:textColor="#B9B6B6"
+        android:textSize="50sp"></TextView>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo1"
+        android:layout_marginTop="60dp"
+        android:text="Nome do Filme:"
+        android:textColor="#B9B6B6"></TextView>
+
+    <EditText
+        android:id="@+id/txtInputNomefilme"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/caixinha"
+
+        ></EditText>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInputNomefilme"
+        android:layout_marginTop="8dp"
+        android:text="Sinopse:"
+        android:textColor="#B9B6B6"></TextView>
+
+
+    <EditText
+
+        android:id="@+id/txtInputsinopse"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt2"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/caixinha"></EditText>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/txtInputsinopse"
+        android:layout_marginTop="8dp"
+        android:text="Nota:"
+        android:textColor="#B9B6B6"></TextView>
+
+    <EditText
+        android:id="@+id/txtInputnota"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt3"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/caixinha"></EditText>
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputnota"
+        android:layout_marginTop="8dp"
+        android:text="Gênero:"
+        android:textColor="#B9B6B6"></TextView>
+
+    <EditText
+        android:id="@+id/txtInputGenero"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txt4"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/caixinha"></EditText>
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputGenero"
+        android:layout_marginTop="8dp"
+        android:text="Dia:"
+        android:textColor="#B9B6B6"></TextView>
+
+    <TextView
+
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputGenero"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/txt5"
+        android:text="Mês:"
+        android:textColor="#B9B6B6"></TextView>
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputGenero"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/txt6"
+        android:text="Ano:"
+        android:textColor="#B9B6B6"></TextView>
+
+    <EditText
+        android:id="@+id/edi1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt5"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/caixinha"></EditText>
+
+    <EditText
+        android:id="@+id/edi2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt6"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/edi1"
+        android:background="@drawable/caixinha"></EditText>
+
+    <EditText
+        android:id="@+id/edi3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt7"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/edi2"
+        android:background="@drawable/caixinha"
+
+        ></EditText>
+
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/btnAdicionar"
+        android:layout_below="@id/edi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:background="@drawable/botaoadd"
+        android:textColor="#B9B6B6"
+        ></Button>
+
+    <Button
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@+id/btnAdicionar"
+        android:id="@+id/btnProximo"
+        android:layout_below="@id/edi1"
+        android:text="Filmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaofilme"
+
+        ></Button>
+
+
+</RelativeLayout>
